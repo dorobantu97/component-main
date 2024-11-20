@@ -1,6 +1,203 @@
-@media(max-width:450px) {
+body{
+    display:flex;
+    width:100%;
+    height:100%;
+    justify-content:center;
+    align-items:center;
+    Family: [Red Hat Display](https: //fonts.google.com/specimen/Red+Hat+Display);
+    Weight: 500, 700, 900;
+    
 }
+.card{
+    display:flex;
+    flex-direction:column;
+    width:80%;
+    height:70%;
+}
+.card-img{
+    display:block;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width:100%;
+}
+.info-summary{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+@media(max-width:375px) {
+    body{
+        background-image:url('images/pattern-background-mobile.svg');
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-position:center;
+        margin:0;
+        padding:0;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        height:100vh;
+    }
+    .card{
+        background-color:hsl(0, 0%, 100%);
+        width:85%;
+        height:80%;
+        box-shadow:0 4px 4px -2px rgba( 0, 0, 0, 0.3);
+        border-radius:15px;
+        
+    }
+    .title{
+        padding-top:15px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .paragraph{
+        font-size:16px;
+        color:hsl(224, 23%, 55%);
+        width:80%;
+        margin:0;
+        text-align:center;
+        padding-bottom:40px;
+    }
+    .annual-plan{
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+        align-items:center;
+        gap:20px;
+        width:80%;
+        padding-bottom:35px;
+    }
+    .container-pay{
+       display:flex;
+       flex-direction:column;
+       justify-content:center;
+       align-items:center;
+       margin:0;
+    }
+    .title-plan{
+        font-weight:bold;
+        height:10px;
+        padding:0;
+        margin:0;
+    }
+    .pay-plan{
+        color: hsl(224, 23%, 55%);
+        height:10px;
+    }
+    .link{
+        padding-left:25px;
+    }
+    .button-proceed{
+        display:grid;
+        grid-template-rows:1fr 1fr;
+        width:80%;
+        height:150px;
+        justify-content:center;
+        align-items:center;
+    }
+    .button-payment{
+        background-color: hsl(245, 75%, 52%);
+        display:flex;
+        width:250px;
+        height:50px;
+        border-radius:10px;
+        justify-content:center;
+        align-items:center;
+        color:hsl(0, 0%, 100%);
+    }
+    .cancel-order{
+        color: hsl(224, 23%, 55%);
+        justify-content:center;
+        align-items:center;
+        font-weight:bold;
+        display:flex;
+    }
+}
+@media(min-width:850px) {
 
-@media(min-width:450px) {
-
+    body {
+        background-image: url('images/pattern-background-desktop.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:100vh;
+        }
+    .card {
+        background-color: hsl(0, 0%, 100%);
+        width: 25%;
+        height: 80%;
+        box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.3);
+        border-radius: 15px;
+    }
+    .title {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .paragraph {
+        font-size: 16px;
+        color: hsl(224, 23%, 55%);
+        width: 80%;
+        margin: 0;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+    .annual-plan {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        width: 80%;
+        padding-bottom: 25px;
+    }
+    .container-pay {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    .title-plan {
+        font-weight: bold;
+        height: 10px;
+        padding: 0;
+        margin: 0;
+    }
+    .pay-plan {
+        color: hsl(224, 23%, 55%);
+        height: 10px;
+    }
+    .link {
+        padding-left: 30px;
+    }
+    .button-proceed {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        width: 80%;
+        height: 120px;
+        justify-content: center;
+        align-items: center;
+    }
+    .button-payment {
+        background-color: hsl(245, 75%, 52%);
+        display: flex;
+        width: 250px;
+        height: 50px;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        color: hsl(0, 0%, 100%);
+    }
+    .cancel-order {
+        color: hsl(224, 23%, 55%);
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        display: flex;
+    }
 }
